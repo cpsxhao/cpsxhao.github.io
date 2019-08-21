@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Publications | Hao&#39;s Site</title>
-    <link>https://cpsxhao.github.io/publication/</link>
-      <atom:link href="https://cpsxhao.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
-    <description>Publications</description>
+    <title>Hao Li | Hao&#39;s Site</title>
+    <link>https://cpsxhao.github.io/authors/hao-li/</link>
+      <atom:link href="https://cpsxhao.github.io/authors/hao-li/index.xml" rel="self" type="application/rss+xml" />
+    <description>Hao Li</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Hao Li 2019</copyright>
     <image>
       <url>https://cpsxhao.github.io/img/icon-192.png</url>
-      <title>Publications</title>
-      <link>https://cpsxhao.github.io/publication/</link>
+      <title>Hao Li</title>
+      <link>https://cpsxhao.github.io/authors/hao-li/</link>
     </image>
     
     <item>
@@ -17,14 +17,6 @@
       <link>https://cpsxhao.github.io/publication/li-2019-improved/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://cpsxhao.github.io/publication/li-2019-improved/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Outage Prediction and Diagnosis for Cloud Service Systems</title>
-      <link>https://cpsxhao.github.io/publication/chen-2019-outage/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://cpsxhao.github.io/publication/chen-2019-outage/</guid>
       <description></description>
     </item>
     

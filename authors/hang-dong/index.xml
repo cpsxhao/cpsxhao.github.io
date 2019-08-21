@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Publications | Hao&#39;s Site</title>
-    <link>https://cpsxhao.github.io/publication/</link>
-      <atom:link href="https://cpsxhao.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
-    <description>Publications</description>
+    <title>Hang Dong | Hao&#39;s Site</title>
+    <link>https://cpsxhao.github.io/authors/hang-dong/</link>
+      <atom:link href="https://cpsxhao.github.io/authors/hang-dong/index.xml" rel="self" type="application/rss+xml" />
+    <description>Hang Dong</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Hao Li 2019</copyright>
     <image>
       <url>https://cpsxhao.github.io/img/icon-192.png</url>
-      <title>Publications</title>
-      <link>https://cpsxhao.github.io/publication/</link>
+      <title>Hang Dong</title>
+      <link>https://cpsxhao.github.io/authors/hang-dong/</link>
     </image>
-    
-    <item>
-      <title>Improved Techniques for Training Adaptive Deep Networks</title>
-      <link>https://cpsxhao.github.io/publication/li-2019-improved/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://cpsxhao.github.io/publication/li-2019-improved/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>Outage Prediction and Diagnosis for Cloud Service Systems</title>
