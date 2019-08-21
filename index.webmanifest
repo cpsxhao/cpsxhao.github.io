@@ -2,8 +2,8 @@
   "name": "Hao&#39;s Site",
   "short_name": "Hao&#39;s Site",
   "lang": "en-us",
-  "theme_color": "#2962ff",
-  "background_color": "#2962ff",
+  "theme_color": "#4caf50",
+  "background_color": "#4caf50",
   "icons": [{
     "src": "img/icon-192.png",
     "sizes": "192x192",
