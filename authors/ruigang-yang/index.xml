@@ -5,7 +5,7 @@
     <link>https://cpsxhao.github.io/authors/ruigang-yang/</link>
       <atom:link href="https://cpsxhao.github.io/authors/ruigang-yang/index.xml" rel="self" type="application/rss+xml" />
     <description>Ruigang Yang</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Hao Li 2020</copyright>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Hao Li 2021</copyright>
     <image>
       <url>https://cpsxhao.github.io/img/icon-192.png</url>
       <title>Ruigang Yang</title>
@@ -17,6 +17,14 @@
       <link>https://cpsxhao.github.io/publication/li-2019-improved/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://cpsxhao.github.io/publication/li-2019-improved/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Improved Techniques for Training Adaptive Deep Networks</title>
+      <link>https://cpsxhao.github.io/publication/li-2020-auto/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://cpsxhao.github.io/publication/li-2020-auto/</guid>
       <description></description>
     </item>
     

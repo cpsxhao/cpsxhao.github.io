@@ -28,10 +28,12 @@
   
     
   
-  <meta name="description" content="Ph.D. student">
+  <meta name="description" content="Adaptive inference is a promising technique to improve the computational efficiency of deep models at test time. In contrast to static models which use the same computation graph for all instances, adaptive networks can dynamically adjust their structure conditioned on each input. While existing research on adaptive inference mainly focuses on designing more advanced architectures, this paper investigates how to train such networks more effectively. Specifically, we consider a typical adaptive deep network with multiple intermediate classifiers. We present three techniques to improve its training efficiency from two aspects:
+1) a Gradient Equilibrium algorithm to resolve the conflict of learning of different classifiers; 2) an Inline Subnetwork Collaboration approach and a One-for-all Knowledge Distillation algorithm to enhance the collaboration among classifiers.
+On multiple datasets (CIFAR-10, CIFAR-100 and ImageNet), we show that the proposed approach consistently leads to further improved efficiency on top of stateof-the-art adaptive deep networks.">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://cpsxhao.github.io/authors/">
+  <link rel="alternate" hreflang="en-us" href="https://cpsxhao.github.io/publication/li-2020-auto/">
 
   
 
@@ -91,14 +93,12 @@
   
 
   
-  <link rel="alternate" href="/authors/index.xml" type="application/rss+xml" title="Hao Li">
-  
 
   <link rel="manifest" href="/index.webmanifest">
   <link rel="icon" type="image/png" href="/img/icon-32.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="https://cpsxhao.github.io/authors/">
+  <link rel="canonical" href="https://cpsxhao.github.io/publication/li-2020-auto/">
 
   
   
@@ -111,11 +111,14 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Hao Li">
-  <meta property="og:url" content="https://cpsxhao.github.io/authors/">
-  <meta property="og:title" content="Authors | Hao Li">
-  <meta property="og:description" content="Ph.D. student"><meta property="og:image" content="https://cpsxhao.github.io/img/icon-192.png">
+  <meta property="og:url" content="https://cpsxhao.github.io/publication/li-2020-auto/">
+  <meta property="og:title" content="Improved Techniques for Training Adaptive Deep Networks | Hao Li">
+  <meta property="og:description" content="Adaptive inference is a promising technique to improve the computational efficiency of deep models at test time. In contrast to static models which use the same computation graph for all instances, adaptive networks can dynamically adjust their structure conditioned on each input. While existing research on adaptive inference mainly focuses on designing more advanced architectures, this paper investigates how to train such networks more effectively. Specifically, we consider a typical adaptive deep network with multiple intermediate classifiers. We present three techniques to improve its training efficiency from two aspects:
+1) a Gradient Equilibrium algorithm to resolve the conflict of learning of different classifiers; 2) an Inline Subnetwork Collaboration approach and a One-for-all Knowledge Distillation algorithm to enhance the collaboration among classifiers.
+On multiple datasets (CIFAR-10, CIFAR-100 and ImageNet), we show that the proposed approach consistently leads to further improved efficiency on top of stateof-the-art adaptive deep networks."><meta property="og:image" content="https://cpsxhao.github.io/img/icon-192.png">
   <meta property="twitter:image" content="https://cpsxhao.github.io/img/icon-192.png"><meta property="og:locale" content="en-us">
   
+    
     
   
 
@@ -128,7 +131,7 @@
 
 
 
-  <title>Authors | Hao Li</title>
+  <title>Improved Techniques for Training Adaptive Deep Networks | Hao Li</title>
 
 </head>
 
@@ -273,77 +276,334 @@
 </nav>
 
 
+  <div class="pub" itemscope itemtype="http://schema.org/CreativeWork">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">Improved Techniques for Training Adaptive Deep Networks</h1>
+
+  
+
+  
+    
+
+
+
+
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    <time></time>
+  </span>
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+    
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=&amp;text=" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=&amp;t=" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=&amp;body=" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=&amp;title=" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=%20" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=&amp;title=" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="btn-links mb-3">
+  
   
 
 
 
 
 
-
-
-
-
-
-
-
-  
-
-  
   
   
     
   
-<div class="universal-wrapper pt-3">
-  <h1 itemprop="name">Authors</h1>
+<a class="btn btn-outline-primary my-1 mr-1" href="https://arxiv.org/abs/1908.06294" target="_blank" rel="noopener">
+  Preprint
+</a>
+
+
+
 
   
+    
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1" href="/pdf/iccv2019.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1" href="https://github.com/kalviny/IMTA" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1" href="/poster/iccv2019.pdf" target="_blank" rel="noopener">
+  Poster
+</a>
+
+
+
+
+
+
+
+
+
+</div>
+
 
   
 </div>
 
 
 
-<div class="universal-wrapper">
+  <div class="article-container">
+
+    
+    <h3>Abstract</h3>
+    <p class="pub-abstract" itemprop="text">Adaptive inference is a promising technique to improve the computational efficiency of deep models at test time. In contrast to static models which use the same computation graph for all instances, adaptive networks can dynamically adjust their structure conditioned on each input. While existing research on adaptive inference mainly focuses on designing more advanced architectures, this paper investigates how to train such networks more effectively. Specifically, we consider a typical adaptive deep network with multiple intermediate classifiers. We present three techniques to improve its training efficiency from two aspects:
+1) a Gradient Equilibrium algorithm to resolve the conflict of learning of different classifiers; 2) an Inline Subnetwork Collaboration approach and a One-for-all Knowledge Distillation algorithm to enhance the collaboration among classifiers.
+On multiple datasets (CIFAR-10, CIFAR-100 and ImageNet), we show that the proposed approach consistently leads to further improved efficiency on top of stateof-the-art adaptive deep networks.</p>
+    
+
+    
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Type</div>
+          <div class="col-12 col-md-9">
+            
+            
+            <a href="/publication/#1">
+              Conference paper
+            </a>
+            
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-md-none space-below"></div>
+    
+
+    
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Publication</div>
+          <div class="col-12 col-md-9"><em>IEEE International Conference on Computer Vision (ICCV) 2019</em></div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-md-none space-below"></div>
+    
+
+    <div class="space-below"></div>
+
+    <div class="article-style"></div>
+
+    
+
+
+    
+
+
+
+
+
+
+
+
+  
+  
+    
+  
   
 
-  <ul>
-    
-    
-      
-      <li><a href="https://cpsxhao.github.io/authors/xian-yang/">Xian Yang</a></li>
-    
-      
-      <li><a href="https://cpsxhao.github.io/authors/xiaojuan-qi/">Xiaojuan Qi</a></li>
-    
-      
-      <li><a href="https://cpsxhao.github.io/authors/yingnong-dang/">Yingnong Dang</a></li>
-    
-      
-      <li><a href="https://cpsxhao.github.io/authors/yong-xu/">Yong Xu</a></li>
-    
-      
-      <li><a href="https://cpsxhao.github.io/authors/yu-kang/">Yu Kang</a></li>
-    
-      
-      <li><a href="https://cpsxhao.github.io/authors/yujun-chen/">Yujun Chen</a></li>
-    
-      
-      <li><a href="https://cpsxhao.github.io/authors/zhangwei-xu/">Zhangwei Xu</a></li>
-    
-  </ul>
+
+
+
 
   
-<nav>
-  <ul class="pagination justify-content-center">
+  
+  
+  
+  <div class="media author-card" itemscope itemtype="http://schema.org/Person">
     
-    <li class="page-item"><a class="page-link" href="/authors/">&laquo;</a></li>
-    
-    
-  </ul>
-</nav>
+
+    <div class="media-body">
+      <h5 class="card-title" itemprop="name"><a href="/authors/uhao-li/u/"></a></h5>
+      
+      
+      <ul class="network-icon" aria-hidden="true">
+        
+      </ul>
+    </div>
+  </div>
 
 
+
+
+    
+
+
+  </div>
 </div>
+
+
 
       
 
